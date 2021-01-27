@@ -1,0 +1,154 @@
+.result-screen {
+  width: 100%;
+  margin: 20px auto 0;
+}
+.result-screen img {
+  max-width: 390px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.result-screen__title span {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px;
+  text-shadow: none;
+  font-weight: bold;
+  color: rgb(44, 62, 80);
+  text-shadow: 1px 1px 1px rgba(109, 110, 110, 0.8);
+}
+.result-screen__title p {
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(45, 52, 54, 0.5);
+}
+.result-screen__text {
+  width: 350px;
+  margin: 40px auto 20px;
+  text-align: left;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.result-screen__text li {
+  width: 100%;
+  margin: 0 auto 7px;
+  list-style: circle;
+  font-size: 18px;
+}
+.OtherDogs {
+  width: 100%;
+  margin: 50px auto 10px;
+  display: flex;
+  justify-content: center;
+}
+.recommendedDogs,
+.notRecommendedDogs {
+  width: 250px;
+}
+.OtherDogs h3 {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgba(44, 62, 80, 0.8);
+}
+.OtherDogs span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(45, 52, 54, 0.3);
+}
+.OtherDogs img {
+  width: 200px;
+}
+.perforatedLine span {
+  display: block;
+  width: 350px;
+  margin: 30px auto;
+  border: 0.05px solid rgba(255, 255, 255, 0.5);
+}
+.shareBtn {
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+}
+.shareBtn__Vertical {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shareBtn button {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+.shareBtn span {
+  display: block;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-shadow: none;
+  color: #353b48;
+}
+.shareBtn__Kakao button {
+  background-color: #f9e000;
+}
+.shareBtn__Facebook button {
+  background-color: #4064ac;
+}
+.shareBtn__Twitter button {
+  background-color: #1da1f2;
+}
+.shareBtn__linkCopy button {
+  background-color: #ecf0f1;
+}
+
+footer {
+  width: 350px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+footer {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 480px) {
+  .result-screen img {
+    width: 240px;
+  }
+  .result-screen__title span {
+    font-size: 20px;
+  }
+  .result-screen__title p {
+    font-size: 30px;
+  }
+  .result-screen__text {
+    width: 220px;
+  }
+  .result-screen__text ul li {
+    font-size: 15px;
+  }
+  .OtherDogs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .OtherDogs img {
+    width: 200px;
+  }
+  .recommendedDogs {
+    margin-bottom: 40px;
+  }
+  .perforatedLine span {
+    display: block;
+    width: 240px;
+    margin: 30px auto;
+    border: 0.05px solid rgba(255, 255, 255, 0.5);
+  }
+  .shareBtn {
+    width: 270px;
+  }
+  footer {
+    width: 100%;
+  }
+}
