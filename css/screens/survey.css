@@ -28,16 +28,17 @@ main {
   text-align: center;
 }
 .question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 3rem;
   font-weight: bold;
   padding: 40px 0 20px;
   line-height: 1.5;
 }
-.questiontime-container {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 0px 0 20px;
-  line-height: 1.5;
+.question-container span {
+  display: block;
+  font-size: 0.5em;
 }
 button {
   border: 0;
@@ -92,11 +93,7 @@ button {
     width: 240px;
     margin: 0 auto;
   }
-.questiontime-container {
-	font-size: 2rem;
-    width: 40px;
-    margin: 0 auto;
-}
+
   .check-container {
     width: 100%;
     margin: 30px auto 0;
