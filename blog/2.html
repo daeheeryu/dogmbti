@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="../css/screens/blog.css">
+    <script src="https://kit.fontawesome.com/3c26041fb8.js" crossorigin="anonymous"></script>
+<style>
+    main section img {
+        width: 700px;
+    }
+    .sullenLink {
+        border: 1px solid;
+        margin-top: 30px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 0.125em #2D3436;
+    }
+    .sullenLink:hover {
+        background-color: #2D3436;
+        color: white;
+    }
+    @media (min-width:1023px) {
+
+        .sullenLink {
+            position: absolute;
+            bottom: 15px;
+            left: calc(50% - 19px);
+        }
+    }
+    @media (max-width:1022px) {
+        main section img {
+        width: 100%;
+    }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <label for="">
+            <input type="search" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </label>
+    </header>
+    <div class="banner"></div>
+    <main>
+        <aside>
+            <div class="profile">
+                <img class="profile__Img" src="../img/size.png" alt=""><br>
+                <span>puppy test<br>개발자들의 이야기</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">메인화면으로</a></li>
+                    <li><a href="1.html">SULLEN 홍보</a></li>
+                    <li><a href="2.html">MBTI에 관하여</a></li>
+                    <li><a href="#">집 인테리어</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <p><br>
+MBTI(Myers-Briggs Type Indicator, MBTI)란 심리학자 카를 융의 이론을 이용해서 캐서린과 그녀의 딸 이사벨이 만든 성격 유형을 분석하는 도구이다. MBTI는 4가지 지표(선호하는 세계, 인식의 형태, 판단 기준, 생활 양식)를 각각 2가지로 구분해 인간의 성격을 16가지로 나타내 직관적으로 이해를 높인다. 
+<br><br>
+1.진단방법<br><br>
+1) 선호하는 세계(E/I)
+선호하는 세계는 에너지를 어느 방향으로 소비하길 선호하는지에 따라 외향형과 내향형으로 나눈다. 만일 응답자가 대인관계와 같은 외부 세계 관심이 쏟는 것을 더 선호한다면 외향형(E)으로 분류한다. 반면 자기만의 세계에 관심을 쏟는 것을 더 선호한다면 내향형(I) 분류한다.
+<br><br>
+2) 인식의 형태(S/N)
+인식의 형태는 정보를 받아들일 때 있는 사실 그대로 받아들인다면 감각형(S), 정보를 재해석하고 여러 의미를 부여 해본다면 직관형(N)으로 나눌 수 있다. 감각형의 경우 정보를 오감을 사용해 그대로 받아들이기 때문에 현실주의적이고 미시적 안목, 숲보다는 나무를 보는 시각이 뛰어나다. 반면 직관형의 경우 정보를 직관을 통해서 재해석 및 여러 의미를 부여 해보기 때문에 미래지향적이고 거시적인 안목, 나무보다는 숲을 보는 시각이 뛰어나다.
+  <br><br>
+3) 판단 기준(T/F)
+판단 기준은 판단을 내릴 때 자신의 가치관, 타인의 감정 등 보다 논리적 사고를 통해 내려진 판단에 더 의존한다면 사고형(T), 논리적 사고보다는 자신의 가치관, 타인의 감정 등에 입각해 판단을 내린다면 감정형(F)이라 구분한다. 
+<br><br>
+4) 생활 양식(J/P)
+생활 양식은 계획을 통해서 행동을 한다면 계획형(J)이라고 하고 계획을 세우지 않고 즉흥적으로 행동을 한다면 지각형(P)이라고 구분한다.
+            </p><br>
+            <p><br>
+2. 16가지 유형<br><br>
+위의 4가지 지표에 2가지의 구분을 통해 2*2*2=16가지의 성격 유형을 만들어 낼 수 있다. 아래에는 각 유형별 별명과 특징을 표현한 표이다.
+				<br>
+        </p>
+		<p><br>
+3. 문제점 및 한계<br><br>
+1) 카를 융의 이론을 제대로 반영하지 못했다.
+MBTI의 창시자 이사벨과 그녀의 딸 캐서린은 카를 융의 이론을 제대로 반영하지 못하였다. MBTI에는 두 모녀가 생각한 인간의 본성에 대한 상상과 가치관이 더 반영되었다.
+<br><br>
+2) 과학적인 방법으로 만들어진 것이 아니다.
+MBTI가 과학적이기 위해서는 4가지 지표를 양극으로 나눈 것이기 때문에 통계적으로 쌍봉곡선의 형태(쌍봉낙타의 등을 생각하면 이해하기 쉬울 것이다)를 띄어야한다. 예를들어, 평균 수치의 내향형을 가진 수와 평균 수치의 외향형을 가진 수가 다른 지점보다 많아야 한다. 하지만 정규분포의 형태(단봉낙타 등을 생각하면 이해가 수월할 것이다)를 띄고 있다. 이 말은 내향형과 외향형을 균등하게 가진 사람들이 더 많다는 것을 의미한다. 따라서 양극성을 가지는 4가지 지표를 통해 성격 유형을 설명하려고 했던 MBTI는 그리 과학적인 방법이 아님을 알 수 있다.
+<br><br>
+3) 재검사 일치율이 낮다
+재검사를 해보았을 경우에 불일치율이 높다. 왜 그런 것일까? 자기 자신이 생각하는 이상적인 모습을 적을 수 있어 조작 가능성이 높기 때문이다.
+<br><br>
+4. 당부의 말씀
+저희가 만든 검사는 MBTI를 기반해 만들었습니다. MBTI는 이해하기 쉽고 접근성이 쉽다는 면에서 보았을 때, 매우 좋은 검사임은 부정할 수 없습니다. 그러나 절대로 과학적인 검사는 아닙니다. 그러므로 ‘나는 이런 사람야’, ‘저 사람은 이런 사람이야’ 등 편견에 빠지지는 말아주세요. 검사를 통해서 나온 성격이 여러 분 그리고 주변 사람들을 전부 설명해주지는 않습니다. 성격 검사로 여러 분들을 우물안의 개구리보다는 검사를 통해 자신과 상대를 더 알고 성장해나갈 수 있는 발판으로 삼아주시면 정말 감사의 말씀 드리겠습니다. 
+				
+        </p>
+        </section>
+    </main>
+    <footer>
+        <span>개발자 연락처<br>
+            류대희 이현비 박영규 | fbeogmlsla@gmail.com
+        </span>
+    </footer>
+</body>
+</html> 
