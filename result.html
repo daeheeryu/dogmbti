@@ -6,9 +6,16 @@
         <title>MBTI로 보는 나의 강아지 유형</title>
         <link rel="stylesheet" href="css/styles.css" />
         <script src="https://kit.fontawesome.com/3c26041fb8.js" crossorigin="anonymous"></script>
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0cc6da0ec33fb8"></script>
-<script data-ad-client="ca-pub-2929681409679243" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0cc6da0ec33fb8"
+        ></script>
+        <script
+            data-ad-client="ca-pub-2929681409679243"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
     </head>
 
     <body>
@@ -16,7 +23,7 @@
             <h2>MBTI로 보는 나의 강아지 유형</h2>
             <span></span>
         </header>
-		
+
         <div class="loading-container" id="loading">
             <img src="img/foot3.png" alt="" />
             <span class="loadingSpan">Loading</span>
@@ -27,15 +34,16 @@
                 document.getElementById('loading').style.display = 'none';
             }, 3000);
         </script>
-		
+
         <main id="main">
             <div class="result-screen">
-                <img id = "img"
+                <img
+                    id="img"
                     src="https://github.com/beeee2/dog-mbti/blob/main/img/terrier.png?raw=true"
                     alt=""
                 />
                 <div class="result-screen__title">
-                    <span id = "name2">당신은</span>
+                    <span id="name2">당신은</span>
                     <p id="name1">티베탄 테리어</p>
                 </div>
 
@@ -46,7 +54,9 @@
                         <li id="text3">은근 고집쟁이지만 싸움을 좋아하지는 않아요.</li>
                         <li id="text4">
                             낯선 이에게 처음엔 경계하지만 친해지고 나면 애정이 가득해요.
-						<li id="text5">
+                        </li>
+
+                        <li id="text5">
                             부끄러움을 많이 타요
                         </li>
                     </ul>
@@ -56,10 +66,11 @@
                 <div class="recommendedDogs">
                     <div class="recommendedDogs__text">
                         <h3>환상의 짝꿍</h3>
-                        <span id = "dog1">골든 리트리버</span>
+                        <span id="dog1">골든 리트리버</span>
                     </div>
                     <div class="recommendedDogs__img">
-                        <img id = "img1"
+                        <img
+                            id="img1"
                             src="https://github.com/beeee2/dog-mbti/blob/main/img/terrier.png?raw=true"
                             alt=""
                         />
@@ -68,10 +79,11 @@
                 <div class="notRecommendedDogs">
                     <div class="notRecommendedDogs__text">
                         <h3>환장의 짝꿍</h3>
-                        <span id = "dog2">비글</span>
+                        <span id="dog2">비글</span>
                     </div>
                     <div class="notRecommendedDogs__img">
-                        <img id = "img2"
+                        <img
+                            id="img2"
                             src="https://github.com/beeee2/dog-mbti/blob/main/img/terrier.png?raw=true"
                             alt=""
                         />
@@ -117,86 +129,92 @@
                 if (MBTI == 'ISTJ') {
                     document.getElementById('name1').innerHTML = '페키니즈';
                     document.getElementById('name2').innerHTML = '당신은 침착하고 자신감있는';
-                    document.getElementById('text1').innerHTML = '"맡겨만 주십쇼!" 주어진 일을 책임감 있게 해내요';
-                    document.getElementById('text2').innerHTML = '"논리적인 생각회로" 합리적이고 냉철해요';
+                    document.getElementById('text1').innerHTML =
+                        '"맡겨만 주십쇼!" 주어진 일을 책임감 있게 해내요';
+                    document.getElementById('text2').innerHTML =
+                        '"논리적인 생각회로" 합리적이고 냉철해요';
                     document.getElementById('text3').innerHTML =
                         '"FM 대로!" 원칙적이고 규칙적인 것을 좋아해요';
-                    document.getElementById('text4').innerHTML = '"필요한 말만 한다" 과묵한 편이에요';
-					document.getElementById('text5').innerHTML = '"나는 포커페이스" 겉보기에 차가워 보인다는 말을 자주 들어요 하지만 속은 따뜻해요';
-					document.getElementById("img").src = "./img/pekinize.png";
-					document.getElementById('dog1').innerHTML = '래브라도<br>리트리버';
-					document.getElementById('dog2').innerHTML = '골든<br>리트리버';
-					document.getElementById("img1").src = "./img/revrado.png";
-					document.getElementById("img2").src = "./img/goldritriver.png";
-                }
-				
-				else if (MBTI == 'ISFJ') {
+                    document.getElementById('text4').innerHTML =
+                        '"필요한 말만 한다" 과묵한 편이에요';
+                    document.getElementById('text5').innerHTML =
+                        '"나는 포커페이스" 겉보기에 차가워 보인다는 말을 자주 들어요 하지만 속은 따뜻해요';
+                    document.getElementById('img').src = './img/pekinize.png';
+                    document.getElementById('dog1').innerHTML = '래브라도<br>리트리버';
+                    document.getElementById('dog2').innerHTML = '골든<br>리트리버';
+                    document.getElementById('img1').src = './img/revrado.png';
+                    document.getElementById('img2').src = './img/goldritriver.png';
+                } else if (MBTI == 'ISFJ') {
                     document.getElementById('name1').innerHTML = '저먼 셰퍼드';
                     document.getElementById('name2').innerHTML = '당신은 용맹하고 충성심있는';
                     document.getElementById('text1').innerHTML =
                         '타인에게는 관대하나 자신에게는 엄격한 기준을 가지고 있어요';
-                    document.getElementById('text2').innerHTML = '"나는 개냥이" 고양이들 처럼 독립적이에요';
+                    document.getElementById('text2').innerHTML =
+                        '"나는 개냥이" 고양이들 처럼 독립적이에요';
                     document.getElementById('text3').innerHTML =
                         '"약속은 생명!" 약속을 철저하게 지키려고 노력해요';
-                    document.getElementById('text4').innerHTML = '"규칙은 지켜야 제맛" 정해진 틀을 선호를 해요';
-					document.getElementById('text5').innerHTML = '"추억은 소중해" 과거 회상을 좋아하고 남들이 기억하기 힘든 세세한 추억들까지 간직하고 있는 경우가 많아요';
-					document.getElementById("img").src = "./img/german.png";
-					document.getElementById('dog1').innerHTML = '프랜치 불독<br>&nbsp;';
-					document.getElementById('dog2').innerHTML = '티베탄<br>마스티프';
-					document.getElementById("img1").src = "./img/buldog.png";
-					document.getElementById("img2").src = "./img/tibetan.png";
-                }
-				
-				else if (MBTI == 'INFJ') {
+                    document.getElementById('text4').innerHTML =
+                        '"규칙은 지켜야 제맛" 정해진 틀을 선호를 해요';
+                    document.getElementById('text5').innerHTML =
+                        '"추억은 소중해" 과거 회상을 좋아하고 남들이 기억하기 힘든 세세한 추억들까지 간직하고 있는 경우가 많아요';
+                    document.getElementById('img').src = './img/german.png';
+                    document.getElementById('dog1').innerHTML = '프랜치 불독<br>&nbsp;';
+                    document.getElementById('dog2').innerHTML = '티베탄<br>마스티프';
+                    document.getElementById('img1').src = './img/buldog.png';
+                    document.getElementById('img2').src = './img/tibetan.png';
+                } else if (MBTI == 'INFJ') {
                     document.getElementById('name1').innerHTML = '오스트레일리언 셰퍼드';
                     document.getElementById('name2').innerHTML = '당신은 강아지들의 에너자이저';
                     document.getElementById('text1').innerHTML =
                         '"나는 발명왕 에디슨 견!" 통찰력, 창의력이 뛰어나 아이디어 뱅크에요';
-                    document.getElementById('text2').innerHTML = '"존재감있게 버틴다!" 참을성과 인내심이 뛰어나요';
-                    document.getElementById('text3').innerHTML = '갈등은 NoNo! 갈등을 회피하려고 해요';
+                    document.getElementById('text2').innerHTML =
+                        '"존재감있게 버틴다!" 참을성과 인내심이 뛰어나요';
+                    document.getElementById('text3').innerHTML =
+                        '갈등은 NoNo! 갈등을 회피하려고 해요';
                     document.getElementById('text4').innerHTML =
                         '자신만의 확고한 신념을 가지고 있어 열정이 넘쳐요!';
-					document.getElementById('text5').innerHTML = '"겉차속따" 겉은 차가워보이지만 속은 따뜻한 경우가 많아요';
-					document.getElementById("img").src = "./img/ostseperd.png";
-					document.getElementById('dog1').innerHTML = '비글<br>&nbsp;';
-					document.getElementById('dog2').innerHTML = '시베리안<br>허스키';
-					document.getElementById("img1").src = "./img/biggle.png";
-					document.getElementById("img2").src = "./img/huski.png";
-                }
-				
-				else if (MBTI == 'INTJ') {
+                    document.getElementById('text5').innerHTML =
+                        '"겉차속따" 겉은 차가워보이지만 속은 따뜻한 경우가 많아요';
+                    document.getElementById('img').src = './img/ostseperd.png';
+                    document.getElementById('dog1').innerHTML = '비글<br>&nbsp;';
+                    document.getElementById('dog2').innerHTML = '시베리안<br>허스키';
+                    document.getElementById('img1').src = './img/biggle.png';
+                    document.getElementById('img2').src = './img/huski.png';
+                } else if (MBTI == 'INTJ') {
                     document.getElementById('name1').innerHTML = '잭 러셀 테리어';
                     document.getElementById('name2').innerHTML = '당신은 영리한';
                     document.getElementById('text1').innerHTML =
                         '"최소 노력으로 최대 효율을!" 합리적이고 공정성을 중요하게 생각해요';
-                    document.getElementById('text2').innerHTML = '"내 사전에 포기란 없다!" 목표를 세우면 어떻게든 해내요';
+                    document.getElementById('text2').innerHTML =
+                        '"내 사전에 포기란 없다!" 목표를 세우면 어떻게든 해내요';
                     document.getElementById('text3').innerHTML =
                         '"나는 이과견" 세상을 논리적이고 객관적으로 바라보려고 해요';
                     document.getElementById('text4').innerHTML = '예리한 관찰력, 통찰력이 뛰어나요';
-					document.getElementById('text5').innerHTML = '"생각한다는건 살아있다는 뜻.." 생각이 많으며, 복잡한 사고활동을 즐겨요';
-					document.getElementById("img").src = "./img/jack.png";
-					document.getElementById('dog1').innerHTML = '웰시코기';
-					document.getElementById('dog2').innerHTML = '비숑 프리제';
-					document.getElementById("img1").src = "./img/welsicoki.png";
-					document.getElementById("img2").src = "./img/bisong.png";
-                }
-				
-				else if (MBTI == 'ISTP') {
+                    document.getElementById('text5').innerHTML =
+                        '"생각한다는건 살아있다는 뜻.." 생각이 많으며, 복잡한 사고활동을 즐겨요';
+                    document.getElementById('img').src = './img/jack.png';
+                    document.getElementById('dog1').innerHTML = '웰시코기';
+                    document.getElementById('dog2').innerHTML = '비숑 프리제';
+                    document.getElementById('img1').src = './img/welsicoki.png';
+                    document.getElementById('img2').src = './img/bisong.png';
+                } else if (MBTI == 'ISTP') {
                     document.getElementById('name1').innerHTML = '로디지안 리지백';
                     document.getElementById('name2').innerHTML = '당신은 활동적이고 모험심있는';
-                    document.getElementById('text1').innerHTML = '"무슨일이야 내가 판단해줄게!" 판단을 냉철하게 잘해요';
-                    document.getElementById('text2').innerHTML = '"규칙은 깨야 제맛!" 틀에 박힌 것을 싫어해요';
-                    document.getElementById('text3').innerHTML = '"나는야 콜롬버스 견" 활동성이 높고 모험심이 풍부해요';
+                    document.getElementById('text1').innerHTML =
+                        '"무슨일이야 내가 판단해줄게!" 판단을 냉철하게 잘해요';
+                    document.getElementById('text2').innerHTML =
+                        '"규칙은 깨야 제맛!" 틀에 박힌 것을 싫어해요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는야 콜롬버스 견" 활동성이 높고 모험심이 풍부해요';
                     document.getElementById('text4').innerHTML = '고정관념이 뭔가요?';
-					document.getElementById('text5').innerHTML = '"솔직한 것이 최고!" 마음에 없는 소리를 잘 못해요, 영혼이 없다는 소리를 가끔 듣지만 티내지 않으려 노력해요';
-					document.getElementById("img").src = "./img/lodigian.png";
-					document.getElementById('dog1').innerHTML = '골든<br>리트리버';
-					document.getElementById('dog2').innerHTML = '레브라도<br>리트리버';
-					document.getElementById("img1").src = "./img/goldritriver.png";
-					document.getElementById("img2").src = "./img/revrado.png";
-                }
-				
-				else if (MBTI == 'ISFP') {
+                    document.getElementById('text5').innerHTML =
+                        '"솔직한 것이 최고!" 마음에 없는 소리를 잘 못해요, 영혼이 없다는 소리를 가끔 듣지만 티내지 않으려 노력해요';
+                    document.getElementById('img').src = './img/lodigian.png';
+                    document.getElementById('dog1').innerHTML = '골든<br>리트리버';
+                    document.getElementById('dog2').innerHTML = '레브라도<br>리트리버';
+                    document.getElementById('img1').src = './img/goldritriver.png';
+                    document.getElementById('img2').src = './img/revrado.png';
+                } else if (MBTI == 'ISFP') {
                     document.getElementById('name1').innerHTML = '시바견';
                     document.getElementById('name2').innerHTML = '당신은 느긋하고 여유로운';
                     document.getElementById('text1').innerHTML =
@@ -207,212 +225,242 @@
                         '규칙적이고 틀에 맞춰진 삶 오우... 생각하기도 싫어요';
                     document.getElementById('text4').innerHTML =
                         '현재의 삶을 즐기는 걸 선호해 느긋하고 태평해요(I’m 거북)';
-					document.getElementById('text5').innerHTML =
+                    document.getElementById('text5').innerHTML =
                         '"잘 보듬어주세요" 생각보다 상처를 받거나 예민해지기 쉬워요, 남을 도와주고서 대가를 받지 못하기도 해요';
-					document.getElementById("img").src = "./img/siba.png";
-					document.getElementById('dog1').innerHTML = '티베탄<br>마스티프';
-					document.getElementById('dog2').innerHTML = '프렌치 불독<br>&nbsp;';
-					document.getElementById("img1").src = "./img/tibetan.png";
-					document.getElementById("img2").src = "./img/buldog.png";
-                }
-				
-				else if (MBTI == 'INFP') {
+                    document.getElementById('img').src = './img/siba.png';
+                    document.getElementById('dog1').innerHTML = '티베탄<br>마스티프';
+                    document.getElementById('dog2').innerHTML = '프렌치 불독<br>&nbsp;';
+                    document.getElementById('img1').src = './img/tibetan.png';
+                    document.getElementById('img2').src = './img/buldog.png';
+                } else if (MBTI == 'INFP') {
                     document.getElementById('name1').innerHTML = '티베탄 테리어';
                     document.getElementById('name2').innerHTML = '당신은 친해지면 애정넘치는';
                     document.getElementById('text1').innerHTML =
                         '처음에 낯을 가리지만 친해지면 애정이 넘쳐 흘러요';
-                    document.getElementById('text2').innerHTML = '"다 괜찮아!" 이해심과 관용이 넘쳐요';
-                    document.getElementById('text3').innerHTML = '"나는 낭만 강아지!" 낭만적이고 내적 신념이 확고해요';
-                    document.getElementById('text4').innerHTML = '"이건 뭐에요?" 호기심이 많고 창의적이에요';
-					document.getElementById('text5').innerHTML = '"나는 금사빠" 좋아하는 사람이 자주 바뀌는 편이고 동시에 여러명을 좋아하는 경우도 있어요';
-					document.getElementById("img").src = "./img/terrier.png";
-					document.getElementById('dog1').innerHTML = '시베리안<br>허스키';
-					document.getElementById('dog2').innerHTML = '비글<br>&nbsp;';
-					document.getElementById("img1").src = "./img/huski.png";
-					document.getElementById("img2").src = "./img/biggle.png";
-                }
-				
-				else if (MBTI == 'INTP') {
+                    document.getElementById('text2').innerHTML =
+                        '"다 괜찮아!" 이해심과 관용이 넘쳐요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는 낭만 강아지!" 낭만적이고 내적 신념이 확고해요';
+                    document.getElementById('text4').innerHTML =
+                        '"이건 뭐에요?" 호기심이 많고 창의적이에요';
+                    document.getElementById('text5').innerHTML =
+                        '"나는 금사빠" 좋아하는 사람이 자주 바뀌는 편이고 동시에 여러명을 좋아하는 경우도 있어요';
+                    document.getElementById('img').src = './img/terrier.png';
+                    document.getElementById('dog1').innerHTML = '시베리안<br>허스키';
+                    document.getElementById('dog2').innerHTML = '비글<br>&nbsp;';
+                    document.getElementById('img1').src = './img/huski.png';
+                    document.getElementById('img2').src = './img/biggle.png';
+                } else if (MBTI == 'INTP') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '차우차우';
                     document.getElementById('name2').innerHTML = '당신은 똑똑하고 스마트한';
                     document.getElementById('text1').innerHTML =
                         '직관력이 높아 지적인 면이 매우 뛰어나요';
-                    document.getElementById('text2').innerHTML = '"혼자가 편해!" 혼자만의 시간을 선호해요';
-                    document.getElementById('text3').innerHTML = '"나는 발명왕 에디슨!" 아이디어가 넘쳐요';
-                    document.getElementById('text4').innerHTML = '"나는 이과견!" 논리적이고 객관적이에요';
-					document.getElementById('text5').innerHTML = '"솔직한것이 최고!" 마음에 없는 소리를 잘 못해요, 그래서 리액션이 부족해 보일 수 있어요';
-					document.getElementById("img").src = "./img/chawu.png";
-					document.getElementById('dog1').innerHTML = '비숑 프리제';
-					document.getElementById('dog2').innerHTML = '웰시코기';
-					document.getElementById("img1").src = "./img/bisong.png";
-					document.getElementById("img2").src = "./img/welsicoki.png";
-                }
-				
-				else if (MBTI == 'ESTP') {
+                    document.getElementById('text2').innerHTML =
+                        '"혼자가 편해!" 혼자만의 시간을 선호해요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는 발명왕 에디슨!" 아이디어가 넘쳐요';
+                    document.getElementById('text4').innerHTML =
+                        '"나는 이과견!" 논리적이고 객관적이에요';
+                    document.getElementById('text5').innerHTML =
+                        '"솔직한것이 최고!" 마음에 없는 소리를 잘 못해요, 그래서 리액션이 부족해 보일 수 있어요';
+                    document.getElementById('img').src = './img/chawu.png';
+                    document.getElementById('dog1').innerHTML = '비숑 프리제';
+                    document.getElementById('dog2').innerHTML = '웰시코기';
+                    document.getElementById('img1').src = './img/bisong.png';
+                    document.getElementById('img2').src = './img/welsicoki.png';
+                } else if (MBTI == 'ESTP') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '비글';
                     document.getElementById('name2').innerHTML = '당신은 즉흥적이고 즐거움이 많은';
-                    document.getElementById('text1').innerHTML = '"카르페디엠" 삶을 즐기면서 살아요';
-                    document.getElementById('text2').innerHTML = '"어디로 튈지 몰라!" 즉흥적인 행동을 선호해요';
+                    document.getElementById('text1').innerHTML =
+                        '"카르페디엠" 삶을 즐기면서 살아요';
+                    document.getElementById('text2').innerHTML =
+                        '"어디로 튈지 몰라!" 즉흥적인 행동을 선호해요';
                     document.getElementById('text3').innerHTML =
                         '한가지에 집중하기 보다 여러 가지에 집중하는게 더 꿀잼이에요';
-                    document.getElementById('text4').innerHTML = '"같이 번지점프 할래요?" 스릴 있는 경험을 좋아해요';
-					document.getElementById('text5').innerHTML = '노는 것을 좋아하고 분위기를 밝게 띄우는데 매우 능숙해요';
-					document.getElementById("img").src = "./img/biggle.png";
-					document.getElementById('dog1').innerHTML = '오스트레일리언<br>셰퍼드';
-					document.getElementById('dog2').innerHTML = '티베탄<br>테리어';
-					document.getElementById("img1").src = "./img/ostseperd.png";
-					document.getElementById("img2").src = "./img/terrier.png";
-                }
-				
-				else if (MBTI == 'ESFP') {
+                    document.getElementById('text4').innerHTML =
+                        '"같이 번지점프 할래요?" 스릴 있는 경험을 좋아해요';
+                    document.getElementById('text5').innerHTML =
+                        '노는 것을 좋아하고 분위기를 밝게 띄우는데 매우 능숙해요';
+                    document.getElementById('img').src = './img/biggle.png';
+                    document.getElementById('dog1').innerHTML = '오스트레일리언<br>셰퍼드';
+                    document.getElementById('dog2').innerHTML = '티베탄<br>테리어';
+                    document.getElementById('img1').src = './img/ostseperd.png';
+                    document.getElementById('img2').src = './img/terrier.png';
+                } else if (MBTI == 'ESFP') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '웰시코기';
                     document.getElementById('name2').innerHTML = '당신은 열정적이고 사교적인';
                     document.getElementById('text1').innerHTML =
                         '열정적이고 에너지가 넘치는 강아지들의 에너자이저에요';
                     document.getElementById('text2').innerHTML = '"YOLO" 즐거움을 선호해요';
-                    document.getElementById('text3').innerHTML = '"나는 강아지들의 인싸!" 사교적이고 활동적이에요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는 강아지들의 인싸!" 사교적이고 활동적이에요';
                     document.getElementById('text4').innerHTML = '"다 괜찮아~" 낙천적이고 친절해요';
-					document.getElementById('text5').innerHTML = '"정주나요?" 정이 많은 이유 때문인지 거절을 잘 못하지만 경우에 따라 아주 냉정하기도 해요';
-					document.getElementById("img").src = "./img/welsicoki.png";
-					document.getElementById('dog1').innerHTML = '잭 러셀 테리어';
-					document.getElementById('dog2').innerHTML = '차우차우<br>&nbsp;';
-					document.getElementById("img1").src = "./img/jack.png";
-					document.getElementById("img2").src = "./img/chawu.png";
-                }
-				
-				else if (MBTI == 'ENFP') {
+                    document.getElementById('text5').innerHTML =
+                        '"정주나요?" 정이 많은 이유 때문인지 거절을 잘 못하지만 경우에 따라 아주 냉정하기도 해요';
+                    document.getElementById('img').src = './img/welsicoki.png';
+                    document.getElementById('dog1').innerHTML = '잭 러셀 테리어';
+                    document.getElementById('dog2').innerHTML = '차우차우<br>&nbsp;';
+                    document.getElementById('img1').src = './img/jack.png';
+                    document.getElementById('img2').src = './img/chawu.png';
+                } else if (MBTI == 'ENFP') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '레브라도 리트리버';
                     document.getElementById('name2').innerHTML = '당신은 재기발랄한';
                     document.getElementById('text1').innerHTML = '새롭게 시도하는 것을 좋아해요';
-                    document.getElementById('text2').innerHTML = '"나는야 인싸견" 새로운 사람 만나는 것을 좋아해요';
-                    document.getElementById('text3').innerHTML = '"해피바이러스 전파견" 재기발랄한 성격이에요';
+                    document.getElementById('text2').innerHTML =
+                        '"나는야 인싸견" 새로운 사람 만나는 것을 좋아해요';
+                    document.getElementById('text3').innerHTML =
+                        '"해피바이러스 전파견" 재기발랄한 성격이에요';
                     document.getElementById('text4').innerHTML = '정이 많고 감수성이 풍부해요';
-					document.getElementById('text5').innerHTML = '"잘 보듬어주세요~" 겉모습은 강해 보이나 내면은 여려요, 상처를 받으면 겉으론 무덤덤해보이지만 속으로는 많이 슬퍼해요';
-					document.getElementById("img").src = "./img/revrado.png";
-					document.getElementById('dog1').innerHTML = '페키니즈<br>';
-					document.getElementById('dog2').innerHTML = '로디지안<br>리지백';
-					document.getElementById("img1").src = "./img/pekinize.png";
-					document.getElementById("img2").src = "./img/lodigian.png";
-                }
-				
-				else if (MBTI == 'ENTP') {
+                    document.getElementById('text5').innerHTML =
+                        '"잘 보듬어주세요~" 겉모습은 강해 보이나 내면은 여려요, 상처를 받으면 겉으론 무덤덤해보이지만 속으로는 많이 슬퍼해요';
+                    document.getElementById('img').src = './img/revrado.png';
+                    document.getElementById('dog1').innerHTML = '페키니즈<br>';
+                    document.getElementById('dog2').innerHTML = '로디지안<br>리지백';
+                    document.getElementById('img1').src = './img/pekinize.png';
+                    document.getElementById('img2').src = './img/lodigian.png';
+                } else if (MBTI == 'ENTP') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '프렌치 불독';
-                    document.getElementById('name2').innerHTML = '당신은 혈기왕성하고 자기주장이 강한';
-                    document.getElementById('text1').innerHTML = '"나는 뇌색견!" 머리가 좋고, 직관력이 뛰어나요';
-                    document.getElementById('text2').innerHTML = '"웃음의 나의 존재 이유!" 유머가 넘쳐요';
+                    document.getElementById('name2').innerHTML =
+                        '당신은 혈기왕성하고 자기주장이 강한';
+                    document.getElementById('text1').innerHTML =
+                        '"나는 뇌색견!" 머리가 좋고, 직관력이 뛰어나요';
+                    document.getElementById('text2').innerHTML =
+                        '"웃음의 나의 존재 이유!" 유머가 넘쳐요';
                     document.getElementById('text3').innerHTML =
                         '자존감이 높고, 자기 확신이 강해요';
                     document.getElementById('text4').innerHTML =
                         '주관과 가치관이 뚜렷해 자기 주장이 강해요';
-					document.getElementById('text5').innerHTML =
+                    document.getElementById('text5').innerHTML =
                         '"내사람은 내가 지킨다!" 좋아하는 사람에겐 다정하지만 싫어하는 사람에겐 가차없어요, 사람에 대한 호불호가 확실한 편이에요';
-					document.getElementById("img").src = "./img/buldog.png";
-					document.getElementById('dog1').innerHTML = '저먼 셰퍼드';
-					document.getElementById('dog2').innerHTML = '시바견';
-					document.getElementById("img1").src = "./img/german.png";
-					document.getElementById("img2").src = "./img/siba.png";
-                }
-				
-				else if (MBTI == 'ESTJ') {
+                    document.getElementById('img').src = './img/buldog.png';
+                    document.getElementById('dog1').innerHTML = '저먼 셰퍼드';
+                    document.getElementById('dog2').innerHTML = '시바견';
+                    document.getElementById('img1').src = './img/german.png';
+                    document.getElementById('img2').src = './img/siba.png';
+                } else if (MBTI == 'ESTJ') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '시베리안 허스키';
                     document.getElementById('name2').innerHTML = '당신은 활동적이고 도전적인';
-                    document.getElementById('text1').innerHTML = '"오늘 할일은 해야지!" 계획적이에요';
-                    document.getElementById('text2').innerHTML = '"도전은 즐거워" 도전 정신이 강해요';
+                    document.getElementById('text1').innerHTML =
+                        '"오늘 할일은 해야지!" 계획적이에요';
+                    document.getElementById('text2').innerHTML =
+                        '"도전은 즐거워" 도전 정신이 강해요';
                     document.getElementById('text3').innerHTML =
                         '논리적이고 객관적이라 규칙적인 것을 중요하게 생각해요';
-                    document.getElementById('text4').innerHTML = '"나 자신을 업그레이드!" 자기관리가 철저해요';
-					document.getElementById('text5').innerHTML = '"나는 평화주의자?" 싸움을 싫어하지만 싸워서 지는 것도 싫어해요';
-					document.getElementById("img").src = "./img/huski.png";
-					document.getElementById('dog1').innerHTML = '티베탄<br>테리어';
-					document.getElementById('dog2').innerHTML = '오스트레일리언<br>셰퍼드';
-					document.getElementById("img1").src = "./img/terrier.png";
-					document.getElementById("img2").src = "./img/ostseperd.png";
-                }
-				
-				else if (MBTI == 'ESFJ') {
+                    document.getElementById('text4').innerHTML =
+                        '"나 자신을 업그레이드!" 자기관리가 철저해요';
+                    document.getElementById('text5').innerHTML =
+                        '"나는 평화주의자?" 싸움을 싫어하지만 싸워서 지는 것도 싫어해요';
+                    document.getElementById('img').src = './img/huski.png';
+                    document.getElementById('dog1').innerHTML = '티베탄<br>테리어';
+                    document.getElementById('dog2').innerHTML = '오스트레일리언<br>셰퍼드';
+                    document.getElementById('img1').src = './img/terrier.png';
+                    document.getElementById('img2').src = './img/ostseperd.png';
+                } else if (MBTI == 'ESFJ') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '비숑 프리제';
                     document.getElementById('name2').innerHTML = '당신은 강아지들의 천사';
-                    document.getElementById('text1').innerHTML = '"강아지계의 인싸!" 매우 사교적이에요';
-                    document.getElementById('text2').innerHTML = '"즐거움은 나의 존재 이유" 즐거운 것을 추구해요';
-                    document.getElementById('text3').innerHTML = '"봉사활동 갈래요?" 타인을 돕는 것을 좋아해요';
-                    document.getElementById('text4').innerHTML = '"즉흥적인건 싫어요" 준비성이 철저해요';
-					document.getElementById('text5').innerHTML = '낯을 가리지는 않지만 확실히 친해지기 전까지는 자신을 다 보여주지 않는 면이 있어요';
-					document.getElementById("img").src = "./img/bisong.png";
-					document.getElementById('dog1').innerHTML = '차우차우';
-					document.getElementById('dog2').innerHTML = '잭 러셀 테리어';
-					document.getElementById("img1").src = "./img/chawu.png";
-					document.getElementById("img2").src = "./img/jack.png";
-                }
-				
-				else if (MBTI == 'ENFJ') {
+                    document.getElementById('text1').innerHTML =
+                        '"강아지계의 인싸!" 매우 사교적이에요';
+                    document.getElementById('text2').innerHTML =
+                        '"즐거움은 나의 존재 이유" 즐거운 것을 추구해요';
+                    document.getElementById('text3').innerHTML =
+                        '"봉사활동 갈래요?" 타인을 돕는 것을 좋아해요';
+                    document.getElementById('text4').innerHTML =
+                        '"즉흥적인건 싫어요" 준비성이 철저해요';
+                    document.getElementById('text5').innerHTML =
+                        '낯을 가리지는 않지만 확실히 친해지기 전까지는 자신을 다 보여주지 않는 면이 있어요';
+                    document.getElementById('img').src = './img/bisong.png';
+                    document.getElementById('dog1').innerHTML = '차우차우';
+                    document.getElementById('dog2').innerHTML = '잭 러셀 테리어';
+                    document.getElementById('img1').src = './img/chawu.png';
+                    document.getElementById('img2').src = './img/jack.png';
+                } else if (MBTI == 'ENFJ') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '골든 리트리버';
                     document.getElementById('name2').innerHTML = '당신은 주변사람을 사랑하는';
-                    document.getElementById('text1').innerHTML = '"I love human" 사람을 정말 좋아해요';
+                    document.getElementById('text1').innerHTML =
+                        '"I love human" 사람을 정말 좋아해요';
                     document.getElementById('text2').innerHTML =
                         '계획적이라 계획을 세우고 실행하는 것을 선호해요';
-                    document.getElementById('text3').innerHTML = '"나는야 개그견" 재미있는 성격을 가지고 있어요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는야 개그견" 재미있는 성격을 가지고 있어요';
                     document.getElementById('text4').innerHTML =
                         '현실보다는 더 나은 이상을 추구해요';
-					document.getElementById('text5').innerHTML =
+                    document.getElementById('text5').innerHTML =
                         '"짐이 되는건 싫어" 본인이 어려움에 처했을 때, 타인에게 짐을 지우기 싫어해서 도움을 요청하지 못하는 경우가 많아요';
-					document.getElementById("img").src = "./img/goldritriver.png";
-					document.getElementById('dog1').innerHTML = '로디지안<br>리지백';
-					document.getElementById('dog2').innerHTML = '페키니즈<br> ';
-					document.getElementById("img1").src = "./img/lodigian.png";
-					document.getElementById("img2").src = "./img/pekinize.png";
-                }
-				
-				else if (MBTI == 'ENTJ') {
+                    document.getElementById('img').src = './img/goldritriver.png';
+                    document.getElementById('dog1').innerHTML = '로디지안<br>리지백';
+                    document.getElementById('dog2').innerHTML = '페키니즈<br> ';
+                    document.getElementById('img1').src = './img/lodigian.png';
+                    document.getElementById('img2').src = './img/pekinize.png';
+                } else if (MBTI == 'ENTJ') {
                     //alert("안녕하세요");
                     document.getElementById('name1').innerHTML = '티베탄 마스티프';
                     document.getElementById('name2').innerHTML = '당신은 카리스마있고 똑똑한';
                     document.getElementById('text1').innerHTML = '우두머리의 성향을 나고 났어요';
-                    document.getElementById('text2').innerHTML = '"오늘 할일은 해야지!" 계획적이고 체계적이에요';
-                    document.getElementById('text3').innerHTML = '"나는야 뇌색견" 지적 욕구가 넘쳐 똑똑해요';
-                    document.getElementById('text4').innerHTML = '"외로운건 NoNo!" 혼자있는 것을 싫어해요';
-					document.getElementById('text5').innerHTML = '"꼰대는 싫어요" 자기 주관이 확고하기 때문에 소위 말하는 꼰대들을 제일 싫어해요';
-					document.getElementById("img").src = "./img/tibetan.png";
-					document.getElementById('dog1').innerHTML = '시바견';
-					document.getElementById('dog2').innerHTML = '저먼 셰퍼드';
-					document.getElementById("img1").src = "./img/siba.png";
-					document.getElementById("img2").src = "./img/german.png";
+                    document.getElementById('text2').innerHTML =
+                        '"오늘 할일은 해야지!" 계획적이고 체계적이에요';
+                    document.getElementById('text3').innerHTML =
+                        '"나는야 뇌색견" 지적 욕구가 넘쳐 똑똑해요';
+                    document.getElementById('text4').innerHTML =
+                        '"외로운건 NoNo!" 혼자있는 것을 싫어해요';
+                    document.getElementById('text5').innerHTML =
+                        '"꼰대는 싫어요" 자기 주관이 확고하기 때문에 소위 말하는 꼰대들을 제일 싫어해요';
+                    document.getElementById('img').src = './img/tibetan.png';
+                    document.getElementById('dog1').innerHTML = '시바견';
+                    document.getElementById('dog2').innerHTML = '저먼 셰퍼드';
+                    document.getElementById('img1').src = './img/siba.png';
+                    document.getElementById('img2').src = './img/german.png';
                 }
             </script>
             <div class="perforatedLine">
                 <span></span>
             </div>
-            
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_p3t5"></div>
-            
-            
+
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox_p3t5"></div>
+
             <div class="check-container">
                 <form action="index.html">
-                    <button class="check">테스트 시작하기
-					</button>
+                    <button class="check">테스트 시작하기</button>
                 </form>
             </div>
+
+            <br /><br />
+            <ins
+                class="kakao_ad_area"
+                style="display: none;"
+                data-ad-unit="DAN-bzYMolajnVD2o84g"
+                data-ad-width="250"
+                data-ad-height="250"
+            ></ins>
+            <script
+                type="text/javascript"
+                src="//t1.daumcdn.net/kas/static/ba.min.js"
+                async
+            ></script>
         </main>
-		<script>
-			document.getElementById('main').style.display = 'none';
+        <script>
+            document.getElementById('main').style.display = 'none';
             setTimeout(function () {
                 document.getElementById('main').style.display = 'block';
             }, 3000);
         </script>
-        <footer id = "footer">
+        <footer id="footer">
             <h3>개발자 연락처</h3>
-            <p>DayDay - 기획 및 개발 | fbeogmlsla@gmail.com<br>개복치 - UI 디자인 및 개발 | beeee2@naver.com<br>0q - 기획 및 마케팅 | qkrwnl221@naver.com</p>
+            <p>
+                DayDay - 기획 및 개발 | fbeogmlsla@gmail.com<br />개복치 - UI 디자인 및 개발 |
+                beeee2@naver.com<br />0q - 기획 및 마케팅 | qkrwnl221@naver.com
+            </p>
         </footer>
-		<script>
-			document.getElementById('footer').style.display = 'none';
+        <script>
+            document.getElementById('footer').style.display = 'none';
             setTimeout(function () {
                 document.getElementById('footer').style.display = 'block';
             }, 3000);
