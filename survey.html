@@ -3,13 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <ins
+            class="kakao_ad_area"
+            style="display: none;"
+            data-ad-unit="DAN-HjYQ1HQlOTD8UnZc"
+            data-ad-width="320"
+            data-ad-height="50"
+        ></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
         <title>MBTI로 보는 나의 강아지 유형</title>
         <link rel="stylesheet" href="css/styles.css" />
-        <script
-            data-ad-client="ca-pub-2929681409679243"
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
         <script language="javascript">
             var M = 0;
             var B = 0;
@@ -21,13 +26,13 @@
                 var elem2 = document.getElementById('btn2');
                 var string = document.getElementsByTagName('p1')[0].innerHTML;
 
-                if (elem.value == '에너지가 충전이 된다.') {
+                if (elem.value == '에너지가 충전이 된다') {
                     elem.value = '나에게는 어렵다';
                     elem2.value = '나에게는 쉽다';
 
                     var replacedString = string
-                        .replace('나는 혼자만의', '사람들 앞에서')
-                        .replace('시간을 가질 때', '말하는것은');
+                        .replace('나는 쉬는날', '사람들 앞에서')
+                        .replace('혼자 시간을 보낼때', '말하는것은');
                     document.getElementById('time').innerHTML = '(2/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M + 1;
@@ -41,20 +46,20 @@
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M + 1;
                 } else if (elem.value == '진이 빠지는 일이다') {
-                    elem.value = '현실적이다';
-                    elem2.value = '이상적이다';
+                    elem.value = '일어날 수 있는일을 상상한다';
+                    elem2.value = '일어날 수 없는일을 상상한다';
                     var replacedString = string
-                        .replace('친구들을 자주', '나는')
-                        .replace('만나는 것은', '  ');
+                        .replace('친구들을 자주', '나는 평소')
+                        .replace('만나는 것은', '현실에서');
                     document.getElementById('time').innerHTML = '(4/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M + 1;
-                } else if (elem.value == '현실적이다') {
+                } else if (elem.value == '일어날 수 있는일을 상상한다') {
                     elem.value = '경험이 더 중요하다';
                     elem2.value = '이론이 더 중요하다';
                     var replacedString = string
-                        .replace('나는', '자신감을')
-                        .replace('  ', '얻기 위해');
+                        .replace('나는 평소', '자신감을')
+                        .replace('현실에서', '얻기 위해');
                     document.getElementById('time').innerHTML = '(5/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     B = B + 1;
@@ -84,17 +89,17 @@
                         .replace('  ', '있을 때');
                     document.getElementById('time').innerHTML = '(8/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
-                    T = T + 1;
+                    I = I + 1;
                 } else if (elem.value == '집중을 잘하는 편이다') {
-                    elem.value = '조화로움';
-                    elem2.value = '경쟁';
+                    elem.value = '능력';
+                    elem2.value = '예의';
                     var replacedString = string
                         .replace('안좋은 일이', '어떤것을 더')
                         .replace('있을 때', '중요하게 생각하는가');
                     document.getElementById('time').innerHTML = '(9/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     T = T + 1;
-                } else if (elem.value == '조화로움') {
+                } else if (elem.value == '능력') {
                     elem.value = '계획을 세운다';
                     elem2.value = '일단 시작한다';
                     var replacedString = string
@@ -120,7 +125,7 @@
                         .replace('  ', '  ');
                     document.getElementById('time').innerHTML = '(12/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
-                    I = I + 1;
+                    T = T + 1;
                 } else if (elem.value == '빨리 결정하는 것이 낫다') {
                     I = I + 1;
                     location.href = 'result.html?' + M + '9' + B + '9' + T + '9' + I + '9';
@@ -131,13 +136,13 @@
                 var elem2 = document.getElementById('btn2');
                 var string = document.getElementsByTagName('p1')[0].innerHTML;
 
-                if (elem.value == '에너지가 충전이 된다.') {
+                if (elem.value == '에너지가 충전이 된다') {
                     elem.value = '나에게는 어렵다';
                     elem2.value = '나에게는 쉽다';
 
                     var replacedString = string
-                        .replace('나는 혼자만의', '사람들 앞에서')
-                        .replace('시간을 가질 때', '말하는것은');
+                        .replace('나는 쉬는날', '사람들 앞에서')
+                        .replace('혼자 시간을 보낼때', '말하는것은');
                     document.getElementById('time').innerHTML = '(2/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M - 1;
@@ -151,20 +156,20 @@
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M - 1;
                 } else if (elem.value == '진이 빠지는 일이다') {
-                    elem.value = '현실적이다';
-                    elem2.value = '이상적이다';
+                    elem.value = '일어날 수 있는일을 상상한다';
+                    elem2.value = '일어날 수 없는일을 상상한다';
                     var replacedString = string
-                        .replace('친구들을 자주', '나는')
-                        .replace('만나는 것은', '  ');
+                        .replace('친구들을 자주', '나는 평소')
+                        .replace('만나는 것은', '현실에서');
                     document.getElementById('time').innerHTML = '(4/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     M = M - 1;
-                } else if (elem.value == '현실적이다') {
+                } else if (elem.value == '일어날 수 있는일을 상상한다') {
                     elem.value = '경험이 더 중요하다';
                     elem2.value = '이론이 더 중요하다';
                     var replacedString = string
-                        .replace('나는', '자신감을')
-                        .replace('  ', '얻기 위해');
+                        .replace('나는 평소', '자신감을')
+                        .replace('현실에서', '얻기 위해');
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     document.getElementById('time').innerHTML = '(5/12)';
                     B = B - 1;
@@ -194,17 +199,17 @@
                         .replace('  ', '있을 때');
                     document.getElementById('time').innerHTML = '(8/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
-                    T = T - 1;
+                    I = I - 1;
                 } else if (elem.value == '집중을 잘하는 편이다') {
-                    elem.value = '조화로움';
-                    elem2.value = '경쟁';
+                    elem.value = '능력';
+                    elem2.value = '예의';
                     var replacedString = string
                         .replace('안좋은 일이', '어떤것을 더')
                         .replace('있을 때', '중요하게 생각하는가');
                     document.getElementById('time').innerHTML = '(9/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
                     T = T - 1;
-                } else if (elem.value == '조화로움') {
+                } else if (elem.value == '능력') {
                     elem.value = '계획을 세운다';
                     elem2.value = '일단 시작한다';
                     var replacedString = string
@@ -230,7 +235,7 @@
                         .replace('  ', '  ');
                     document.getElementById('time').innerHTML = '(12/12)';
                     document.getElementsByTagName('p1')[0].innerHTML = replacedString;
-                    I = I - 1;
+                    T = T - 1;
                 } else if (elem.value == '빨리 결정하는 것이 낫다') {
                     I = I - 1;
                     location.href = 'result.html?' + M + '9' + B + '9' + T + '9' + I + '9';
@@ -245,7 +250,7 @@
         </header>
         <main>
             <div class="question-container">
-                <p1>나는 혼자만의<br />시간을 가질 때</p1>
+                <p1>나는 쉬는날<br />혼자 시간을 보낼때</p1>
                 <span id="time">(1/12)</span>
             </div>
 
@@ -255,7 +260,7 @@
                     class="check"
                     name="btn1"
                     id="btn1"
-                    value="에너지가 충전이 된다."
+                    value="에너지가 충전이 된다"
                     onclick="change()"
                 />
                 <input
@@ -263,11 +268,11 @@
                     class="check"
                     name="btn2"
                     id="btn2"
-                    value="에너지가 충전이 되지 않는다."
+                    value="에너지가 충전이 되지 않는다"
                     onclick="change2()"
                 />
             </form>
-			
+
             <br /><br />
             <ins
                 class="kakao_ad_area"
